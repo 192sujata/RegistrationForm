@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="register">
+        <h2>Register here</h2>
+        <form id="registerform" method="post">
+          <label for="fname"> First name: </label>
+          <br />
+          <input
+            type="text"
+            class="input-field"
+            name="fname"
+            id="fname"
+            placeholder="Enter your first name"
+          />
+          <br />
+          <label for="lname"> Last name:</label>
+          <br />
+          <input
+            type="text"
+            class="input-field"
+            name="lname"
+            id="lname"
+            placeholder="Enter your last name"
+          />
+          <br />
+          <label for="age">Your Age:</label>
+          <br />
+          <input
+            type="number"
+            class="input-field"
+            name="age"
+            id="age"
+            placeholder="How old are you ?"
+          />
+          <br />
+          <label for="email">Email:</label>
+          <br />
+          <input
+            type="email"
+            class="input-field"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <br />
+          <span>Gender:</span>
+          <br />
+          <input type="radio" name="radio" id="radio1" value="Male"/>
+          <label for="radio1" class="radio-check">Male</label>
+          <input type="radio" name="radio" id="radio2" value="Female"/>
+          <label for="radio2" class="radio-check">Female</label>
+          <br />
+          <span>Known language:</span>
+          <br />
+          <input type="checkbox" name="checkbox" id="checkbox1" value="Hindi"/>
+          <label for="checkbox1" class="radio-check">Hindi</label>
+          <input type="checkbox" name="checkbox" id="checkbox2" value="English" />
+          <label for="checkbox2" class="radio-check">English</label>
+          <input type="checkbox" name="checkbox" id="checkbox3" value="Urdu" />
+          <label for="checkbox3" class="radio-check">Urdu</label>
+          <br />
+          <input type="submit" value="submit" name="submit" id="submit" />
+        </form>
+        <div id="userInfo"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
